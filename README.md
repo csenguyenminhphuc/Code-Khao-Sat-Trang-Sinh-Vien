@@ -1,4 +1,4 @@
-# Khao Sát Trang Sinh Viên – Tự Động Chọn Radio & Điền Chú Ý
+# Khảo Sát Trang Sinh Viên IUH
 
 ## Mô tả
 Một script JavaScript nhỏ giúp bạn tự động:
@@ -13,10 +13,12 @@ Chỉ cần chỉnh hai biến `target` và `comment` rồi chạy trong Console
 
 ```javascript
 // ==== TÙY CHỈNH ====
-const target  = 'Phân vân'; // Đổi 'Phân vân' thành nhãn radio bạn muốn chọn
-const comment = 'Không ý kiến';// Đổi 'Không ý kiến' thành nội dung bạn muốn điền
+const target  = 'Phân vân'; // Đổi 'Phân vân' thành nhãn radio bạn muốn chọn chú ý để nguyên dấu " "
+
+const comment = 'Không ý kiến';// Đổi 'Không ý kiến' thành nội dung bạn muốn điền chú ý để nguyên dấu " "
 
 const re = new RegExp(target, 'i');
+
 // 1. Tự động click radio có nhãn khớp
 for (const l of document.querySelectorAll('label.mt-radio')) {
   if (re.test(l.textContent)) {
