@@ -1,27 +1,29 @@
-# Code-Khao-Sat-Trang-Sinh-Vien
+# Khao Sát Trang Sinh Viên – Tự Động Chọn Radio & Điền Chú Ý
 
-const target  = 'Phân vân';             // sửa chữ ở đây thay từ Phân vân thành nhãn bạn muốn click chú ý để nguyên dấu " "
+## Mô tả
+Một script JavaScript nhỏ giúp bạn tự động:
+- Chọn radio theo **nhãn** bạn chỉ định.
+- Điền vào ô **“Ý kiến khác”** với **nội dung** bạn muốn.
 
-const comment = 'Không ý kiến';    // sửa chữ ở đây thành nội dung muốn điền chú ý để nguyên dấu " "
+Chỉ cần chỉnh hai biến `target` và `comment` rồi chạy trong Console của trình duyệt.
 
+---
+
+## Nội dung script
+
+```javascript
+// ==== TÙY CHỈNH ====
+const target  = 'Phân vân'; // Đổi 'Phân vân' thành nhãn radio bạn muốn chọn
+const comment = 'Không ý kiến';// Đổi 'Không ý kiến' thành nội dung bạn muốn điền
 
 const re = new RegExp(target, 'i');
-
-// click radio đúng nhãn
-
+// 1. Tự động click radio có nhãn khớp
 for (const l of document.querySelectorAll('label.mt-radio')) {
-
   if (re.test(l.textContent)) {
-  
     l.click();
-    
   }
 }
 
-// điền vào ô "Ý kiến khác"
-
+// 2. Tự động điền vào textarea nếu tồn tại
 const ta = document.querySelector('textarea.input-ykien');
-
 if (ta) ta.value = comment;
-
-
