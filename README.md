@@ -13,7 +13,7 @@ Chỉ cần chỉnh hai biến `target` và `comment` rồi chạy trong Console
 
 ```javascript
 // ==== TÙY CHỈNH ====
-const target  = 'Hoàn toàn đồng '; // Đổi 'Phân vân' thành nhãn radio bạn muốn chọn chú ý để nguyên dấu " "
+const target  = 'Hoàn toàn đồng ý'; // Đổi 'Phân vân' thành nhãn radio bạn muốn chọn chú ý để nguyên dấu " "
 
 const comment = 'Em yêu trường em lắm';// Đổi 'Không ý kiến' thành nội dung bạn muốn điền chú ý để nguyên dấu " "
 
