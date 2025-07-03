@@ -9,7 +9,7 @@ Chỉ cần chỉnh hai biến `target` và `comment` rồi chạy trong Console
 
 ---
 
-## Nội dung script
+## Nội dung script Nhớ ấn nút F12 hoặc chuột phải -> click kiểm tra
 
 ```javascript
 // ==== TÙY CHỈNH ====
